@@ -16,3 +16,4 @@ def newton_erf(target, initial_guess=0.5, tol=1e-10, max_iter=100):
 # erf(x) = 0.5
 result_x = newton_erf(0.5)
 print(result_x)
+print(math.erf(result_x))
