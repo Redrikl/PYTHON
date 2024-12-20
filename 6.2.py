@@ -12,7 +12,7 @@ def f(x):
     return np.sqrt(29-15*(np.cos(x)**2))
 
 # Количество случайных точек
-N = 1000
+N = 10000
 
 # Генерация случайных точек в пределах [a, b]
 x_random = np.random.uniform(a, b, N)
@@ -41,4 +41,6 @@ plt.ylabel("f(x)")
 plt.grid()
 plt.show()
 
-print(integral_value)
+print("Ответ", integral_value)
+print("Абсолютная ошибка", abs(integral_value-23.1))
+print("Относительная ошибка", abs(integral_value-23.1)/23.1)
