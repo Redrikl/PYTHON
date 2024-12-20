@@ -10,7 +10,7 @@ def r(theta):
 theta_min, theta_max = 0, 2 * np.pi
 
 # Количество случайных точек
-N = 1000
+N = 100000
 
 # Определение прямоугольника, охватывающего фигуру
 r_max = 2  # Максимальное значение r (1 + max(cos(theta)))
@@ -49,8 +49,9 @@ plt.legend()
 plt.grid()
 plt.show()
 
-area_figure
-
+print("Ответ", area_figure)
+print("Абсолютная ошибка", abs(area_figure-6.2417))
+print("Относительная ошибка", abs(area_figure-6.2417)/6.2417)
 
 
 
