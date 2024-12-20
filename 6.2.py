@@ -1,14 +1,15 @@
+import math
+
 import numpy as np
 import matplotlib.pyplot as plt
-
 # Задание 2. Вычисление интеграла методом Монте-Карло
 
 # Границы интегрирования
-a, b = 0, 1
+a, b = 0, 5
 
 # Функция для интегрирования
 def f(x):
-    return x**2
+    return np.sqrt(29-15*(np.cos(x)**2))
 
 # Количество случайных точек
 N = 1000
@@ -40,4 +41,4 @@ plt.ylabel("f(x)")
 plt.grid()
 plt.show()
 
-integral_value
+print(integral_value)
