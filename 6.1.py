@@ -5,15 +5,15 @@ import matplotlib.pyplot as plt
 
 # Границы треугольника
 x1, y1 = 0, 0
-x2, y2 = 25, 0
-x3, y3 = 15, 10
+x2, y2 = 22.5, 15
+x3, y3 = 0, 60
 
 # Количество случайных точек
-N = 1000
+N = 10000
 
 # Генерация случайных точек в прямоугольнике, содержащем треугольник
-x_min, x_max = 0, 25
-y_min, y_max = 0, 10
+x_min, x_max = 0, 22.5
+y_min, y_max = 0, 60
 x_random = np.random.uniform(x_min, x_max, N)
 y_random = np.random.uniform(y_min, y_max, N)
 
