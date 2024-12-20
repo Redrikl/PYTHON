@@ -1,10 +1,11 @@
+import math
 import numpy as np
 import matplotlib.pyplot as plt
 # Задание 3. Вычисление числа π методом Монте-Карло
 
 # Параметры задачи
 radius = 1  # Радиус круга
-N = 1000  # Количество случайных точек
+N = 100000  # Количество случайных точек
 
 # Генерация случайных точек в квадрате [-1, 1] x [-1, 1]
 x_random = np.random.uniform(-radius, radius, N)
@@ -36,4 +37,6 @@ plt.legend()
 plt.grid()
 plt.show()
 
-pi_approx
+print("Ответ", pi_approx)
+print("Абсолютная ошибка", abs(pi_approx-math.pi))
+print("Относительная ошибка", abs(pi_approx-math.pi)/math.pi)
