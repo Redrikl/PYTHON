@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 # Задание 1. Вычисление площади треугольника методом Монте-Карло
 
@@ -9,7 +10,7 @@ x2, y2 = 22.5, 15
 x3, y3 = 0, 60
 
 # Количество случайных точек
-N = 10000
+N = 100000
 
 # Генерация случайных точек в прямоугольнике, содержащем треугольник
 x_min, x_max = 0, 22.5
@@ -47,4 +48,6 @@ plt.ylabel("y")
 plt.grid()
 plt.show()
 
-print(area_triangle)
+print("Ответ по Монте-Карло", area_triangle)
+print("Абсолютная ошибка", abs(area_triangle-675))
+print("Относительная ошибка", abs(area_triangle-675)/675)
