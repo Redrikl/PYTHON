@@ -5,15 +5,15 @@ import matplotlib.pyplot as plt
 
 # Границы треугольника
 x1, y1 = 0, 0
-x2, y2 = 2, 0
-x3, y3 = 1, 2
+x2, y2 = 25, 0
+x3, y3 = 15, 10
 
 # Количество случайных точек
 N = 1000
 
 # Генерация случайных точек в прямоугольнике, содержащем треугольник
-x_min, x_max = 0, 2
-y_min, y_max = 0, 2
+x_min, x_max = 0, 25
+y_min, y_max = 0, 10
 x_random = np.random.uniform(x_min, x_max, N)
 y_random = np.random.uniform(y_min, y_max, N)
 
@@ -47,4 +47,4 @@ plt.ylabel("y")
 plt.grid()
 plt.show()
 
-area_triangle
+print(area_triangle)
