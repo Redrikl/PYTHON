@@ -6,13 +6,13 @@ def f(x):
 
 # Метод прямоугольников
 def rectangle_method(f, a, b, n):
-    h = (b - a) / n
+    h = 1 / n
     x = np.linspace(a, b - h, n)
     return h * np.sum(f(x))
 
 # Метод трапеций
 def trapezoid_method(f, a, b, n):
-    h = (b - a) / n
+    h = 1 / n
     x = np.linspace(a, b, n + 1)
     return h * (np.sum(f(x)) - (f(a) + f(b)) / 2)
 
